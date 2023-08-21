@@ -1,7 +1,10 @@
-┌────────┬────────────┬───────────┬────────────┬────────────────┬────────────┐
-│ std_id │  std_name  │ std_class │  std_dob   │  std_address   │  std_phno  │
-├────────┼────────────┼───────────┼────────────┼────────────────┼────────────┤
-│ 1      │ jothika    │ cs        │ 2003-07-01 │ sathyamangalam │ 1234567898 │
-│ 2      │ priya      │ cs        │ 2003-04-04 │ ooty           │ 9876543211 │
-│ 3      │ dhanashree │ b.com     │ 2003-07-07 │ coimbatore     │ 7654321890 │
-└────────┴────────────┴───────────┴────────────┴────────────────┴────────────┘
+create table student_details( std_id int,std_name text,std_class text,std_address text);                                                            
+sqlite> insert into student_details(std_id,std_name,std_class,std_address) values('1','jothika','cs','sathyamangalam');
+sqlite> select *from student_details;
+
+┌────────┬──────────┬───────────┬────────────────┐
+│ std_id │ std_name │ std_class │  std_address   │
+├────────┼──────────┼───────────┼────────────────┤
+│ 1      │ jothika  │ cs        │ sathyamangalam │
+└────────┴──────────┴───────────┴────────────────┘
+
